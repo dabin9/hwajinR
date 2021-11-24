@@ -1,0 +1,349 @@
+/*
+  가장중요한 조건
+  가로스롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+ /* 실콘텐츠 + 100 */
+/* 1400 작은pc 사이즈,작은 모니터  */
+  /*
+   모바일
+   *대대적 레이아웃 변화
+   사이드 패딩 15~20
+   대폰트 font-size: 38~28
+   중폰트 18~28
+   소폰트 12~ 16
+   웬만한 레이아웃은 1줄 아니면 2줄
+   320으로 가야함
+  */
+
+@media screen and (max-width: 1400px){
+  /*header*/
+  /*main*/
+
+.main_vis .main_slide .circle .cir01{
+    width: 220px;
+    height: 220px;
+ 
+}
+.main_vis .main_slide .circle .cir02{
+    width: 220px;
+    height: 220px;
+   
+}
+.main_vis .main_slide .circle .cir03{
+    width: 220px;
+    height: 220px;
+    
+}
+.sub_menu .sub_iconList{
+  display: none;
+}
+  
+}
+@media(max-width: 1300px){
+  header .gnb{
+  display: none;
+}
+header .lang{
+  right:100px;
+}
+.twin_box{
+  display: flex;
+    top: 30px;
+    right: 30px;
+        transform:translateY(-20%);
+}
+.business_wrap{
+      flex-direction: column;
+  align-items: center;
+}
+.busi_box .busi_wrap li:hover .txt_wrap::before{
+  width: 70%;
+}
+}
+
+@media(max-width: 1000px) {
+
+
+    .main_vis .main_slide .txt_wrap {
+        flex-direction: column;
+        top:20%;
+        left: auto;
+        bottom: auto;
+    }
+
+    .main_vis .main_slide .txt_wrap .title {
+
+        margin-bottom: 30px;    
+    }
+    
+.main_vis .btn{
+  right: 50%;
+  transform: translateX(50%);
+}
+.busi_box{
+  margin: auto;
+}
+.busi_box .busi_wrap {
+    flex-direction: column;
+}
+.busi_box .busi_wrap .box1{
+  margin: auto;
+  margin-bottom: 20px;
+}
+.busi_box .busi_wrap li .txt_wrap .desc{
+  display: none;
+}
+
+.busi_wrap li .txt_wrap::before{
+  display: none;
+}
+.busi_box .txt_wrap .right{
+  display: inline-block;
+}
+
+.busi_box .busi_wrap li .txt_wrap{
+        padding: 70px 50px;
+}
+.busi_box .busi_wrap li .txt_wrap .desc a{
+  margin-bottom: 5px;
+}
+.with_container .with_tab li{
+  font-size: 15px;
+}
+footer .footer_area .top .sns {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+}
+footer .footer_area .top .sns ul {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 84px; */
+    justify-content: center;
+}
+footer .footer_area .bottom {
+    background: #f5f5f5;
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column-reverse;
+}
+footer .footer_area .bottom .footerlogo {
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer .footer_area .bottom .info_area {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+footer .footer_area .bottom .cus {
+    text-align: center;
+    margin: auto;
+}
+
+
+}
+@media(max-width: 640px){
+
+  header .lang .first::after{
+    width: 5px;
+    height: 5px;
+    right: 8px;
+  }
+  .with_area .with_tappers span{
+      font-size:0.7rem;
+    }
+ 
+      .with_area .with_slide .txt_wrap{
+      width: 100%;
+    }
+    .with_area .with_slide .txt_wrap .recruit{
+    }
+    .recruit_area .txt_wrap {
+    top: 50%;
+    left: 30px;
+    transform: translate(0%, -50%);
+}
+
+.busi_box .busi_wrap li .txt_wrap strong{
+    font-size:1.5rem;
+}
+.busi_box .txt_wrap .right > i{
+    font-size:1.5rem;
+
+}
+
+.busi_box .busi_wrap li .txt_wrap{
+        padding: 70px 50px;
+}
+.with_container .with_tab li{
+  font-size: 13px;
+}
+.with_container .txt_wrap strong{
+  font-size: 42px;
+}
+.with_container .txt_wrap p{
+  font-size: 12px;
+}
+
+}
+
+@media(max-width: 500px) {
+    header h1{
+      left:10px;
+      width:110px;
+    }
+
+    header .lang{
+      width:45px;
+      right: 80px;
+    }
+    header .lang li{
+      padding:0 8px;
+    }
+    header .lang li a{
+      font-size: 10px;
+    }
+    header .lang li::after{
+      right: 1px;
+    }
+
+    .main_vis .main_slide .circle{
+      top: 40%;
+    }
+.main_vis .main_slide .circle .cir01{
+    width: 50px;
+    height: 50px;
+ 
+}
+.main_vis .main_slide .circle .cir02{
+    width:50px;
+    height:50px;
+   
+}
+.main_vis .main_slide .circle .cir03{
+    width:50px;
+    height:50px;
+    
+}
+.main_vis .btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+    .main_vis .main_slide .txt_wrap {
+        font-size: 12px;
+    }
+
+ .with_container .with_tab li{
+   font-size: 10px;
+   line-height: 15px;
+ }
+ .with_container .txt_wrap strong{
+  font-size: 37px;
+}
+.with_container .txt_wrap p{
+  font-size: 10px;
+}
+
+    .busi_box{
+      padding: 0;
+    }
+
+.busi_box .busi_wrap li .txt_wrap{
+    padding: 15px 15px 0;
+}
+.busi_box .busi_wrap li .txt_wrap strong{
+    font-size:1.2rem;
+}
+.busi_box .txt_wrap .right > i{
+    font-size:1.2rem;
+
+}
+.busi_box .busi_wrap li .txt_wrap{
+  padding: 20px;
+}
+
+
+  footer .footer_area .top .sns h3{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+    footer .footer_area .top{
+      padding-left: 0;
+    }
+footer .footer_area .bottom address ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width: 320px){
+  .with_area .with_tappers span{
+      font-size:0.1rem;
+      letter-spacing: -4px;
+    }
+    .board_area .board_btn{
+    height: 50px;
+    padding: 0 5px;
+  }
+  .board_swiper-button-next{
+    right: 5px;
+  }
+   .with_container .with_tab li{
+   line-height: 12px;
+   padding: 8px;
+ }
+  
+    
+}
+
+@media(max-width: 270px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
